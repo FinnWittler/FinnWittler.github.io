@@ -40,7 +40,7 @@ const ThemeChanger = ({
   };
 
   return (
-    <div className="card overflow-visible shadow-lg card-sm bg-base-100">
+    <div className="card overflow-visible shadow-lg card-sm bg-base-100 fade-in-up">
       <div className="flex-row items-center space-x-4 flex pl-6 pr-2 py-4">
         <div className="flex-1">
           <h5 className="card-title">
@@ -51,7 +51,7 @@ const ThemeChanger = ({
                 className: 'mb-1',
               })
             ) : (
-              <span className="text-base-content opacity-70">Theme</span>
+              <span className="text-base-content opacity-70 slide-in-left">Theme</span>
             )}
           </h5>
           <span className="text-base-content/50 capitalize text-sm">
@@ -73,13 +73,13 @@ const ThemeChanger = ({
             <div title="Change Theme" className="dropdown dropdown-end">
               <div
                 tabIndex={0}
-                className="btn btn-ghost m-1 normal-case opacity-50 text-base-content flex items-center whitespace-nowrap"
+                className="btn btn-ghost m-1 normal-case opacity-50 text-base-content flex items-center whitespace-nowrap hover:opacity-100 transition-all duration-300 hover:scale-105"
               >
                 <RiDice4Line className="inline-block w-5 h-5 stroke-current" />
               </div>
               <div
                 tabIndex={0}
-                className="mt-16 overflow-y-auto shadow-2xl top-px dropdown-content max-h-96 min-w-max rounded-lg bg-base-200 text-base-content z-10"
+                className="mt-16 overflow-y-auto shadow-2xl top-px dropdown-content max-h-96 min-w-max rounded-lg bg-base-200 text-base-content z-10 fade-in-down"
               >
                 <ul className="p-4 menu menu-sm">
                   {[
@@ -88,13 +88,12 @@ const ThemeChanger = ({
                       (item) => item !== themeConfig.defaultTheme,
                     ),
                   ].map((item, index) => (
-                    <li key={index}>
-                      {}
+                    <li key={index} className={`stagger-${Math.min(index + 1, 5)}`}>
                       <a
                         onClick={(e) => changeTheme(e, item)}
-                        className={`${theme === item ? 'active' : ''}`}
+                        className={`${theme === item ? 'active' : ''} hover:bg-base-300 transition-all duration-200 rounded-lg`}
                       >
-                        <span className="opacity-60 capitalize">
+                        <span className="opacity-60 capitalize hover:opacity-100 transition-opacity duration-200">
                           {item === themeConfig.defaultTheme ? 'Default' : item}
                         </span>
                       </a>

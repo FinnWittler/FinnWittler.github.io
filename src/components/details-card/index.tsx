@@ -63,11 +63,12 @@ const ListItem: React.FC<{
   value: React.ReactNode;
   link?: string;
   skeleton?: boolean;
-}> = ({ icon, title, value, link, skeleton = false }) => {
+  index?: number;
+}> = ({ icon, title, value, link, skeleton = false, index = 0 }) => {
   return (
-    <div className="flex justify-start py-2 px-1 items-center">
+    <div className={`flex justify-start py-2 px-1 items-center hover:bg-base-200 rounded-lg transition-all duration-200 fade-in-up stagger-${Math.min(index + 1, 5)}`}>
       <div className="grow font-medium gap-2 flex items-center my-1">
-        {icon} {title}
+        <span className="hover:text-primary transition-colors duration-200">{icon}</span> {title}
       </div>
       <div
         className={`${
@@ -81,7 +82,7 @@ const ListItem: React.FC<{
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="flex justify-start py-2 px-1 items-center"
+          className="flex justify-start py-2 px-1 items-center hover:text-primary transition-colors duration-200"
         >
           {value}
         </a>
@@ -169,7 +170,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
   };
 
   return (
-    <div className="card shadow-lg card-sm bg-base-100">
+    <div className="card shadow-lg card-sm bg-base-100 fade-in-up hover:shadow-xl transition-shadow duration-300">
       <div className="card-body">
         <div className="text-base-content">
           {loading || !profile ? (
@@ -181,6 +182,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   icon={<MdLocationOn />}
                   title="Based in:"
                   value={profile.location}
+                  index={0}
                 />
               )}
               {profile.company && (
@@ -200,6 +202,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                 title="GitHub:"
                 value={github.username}
                 link={`https://github.com/${github.username}`}
+                index={1}
               />
               {social?.researchGate && (
                 <ListItem
@@ -207,6 +210,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="ResearchGate:"
                   value={social.researchGate}
                   link={`https://www.researchgate.net/profile/${social.researchGate}`}
+                  index={2}
                 />
               )}
               {social?.x && (
@@ -365,6 +369,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Discord:"
                   value={social.discord}
                   link={`https://discord.com/app`}
+                  index={3}
                 />
               )}
             </Fragment>

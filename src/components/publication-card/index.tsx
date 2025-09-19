@@ -77,18 +77,21 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <a
-        className="card shadow-md card-sm bg-base-100 cursor-pointer"
+        className="card shadow-md card-sm bg-base-100 cursor-pointer z-hover fade-in-up transition-all duration-300 hover:shadow-xl"
         key={index}
         href={item.link}
         target="_blank"
         rel="noreferrer"
+        style={{ animationDelay: `${index * 0.1}s` }}
       >
         <div className="p-8 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
+                  <h2 className="font-medium opacity-60 mb-2 hover:opacity-80 transition-opacity duration-200">
+                    {item.title}
+                  </h2>
                   {item.conferenceName && (
                     <p className="text-base-content opacity-50 text-sm">
                       {item.conferenceName}
@@ -120,8 +123,8 @@ const PublicationCard = ({
 
   return (
     <Fragment>
-      <div className="col-span-1 lg:col-span-2">
-        <div className="card bg-base-200 shadow-xl border border-base-300">
+      <div className="col-span-1 lg:col-span-2 fade-in-up">
+        <div className="card bg-base-200 shadow-xl border border-base-300 hover:shadow-2xl transition-shadow duration-300">
           <div className="card-body p-8">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
               <div className="flex items-center space-x-3">
@@ -132,7 +135,7 @@ const PublicationCard = ({
                     className: 'rounded-xl',
                   })
                 ) : (
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl">
+                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl pulse-slow">
                     <AiOutlineBook className="text-2xl" />
                   </div>
                 )}

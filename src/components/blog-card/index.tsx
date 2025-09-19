@@ -95,9 +95,10 @@ const BlogCard = ({
     return articles && articles.length ? (
       articles.slice(0, blog.limit).map((article, index) => (
         <a
-          className="card shadow-md card-sm bg-base-100 cursor-pointer"
+          className="card shadow-md card-sm bg-base-100 cursor-pointer z-hover fade-in-up transition-all duration-300 hover:shadow-xl"
           key={index}
           href={article.link}
+          style={{ animationDelay: `${index * 0.1}s` }}
           onClick={(e) => {
             e.preventDefault();
 
@@ -116,8 +117,8 @@ const BlogCard = ({
         >
           <div className="p-8 h-full w-full">
             <div className="flex items-center flex-col md:flex-row">
-              <div className="avatar mb-5 md:mb-0 opacity-90">
-                <div className="w-24 h-24 mask mask-squircle">
+              <div className="avatar mb-5 md:mb-0 opacity-90 hover:opacity-100 transition-opacity duration-300">
+                <div className="w-24 h-24 mask mask-squircle hover:scale-105 transition-transform duration-300">
                   <LazyImage
                     src={article.thumbnail}
                     alt={'thumbnail'}
@@ -132,7 +133,7 @@ const BlogCard = ({
               <div className="w-full">
                 <div className="flex items-start px-4">
                   <div className="text-center md:text-left w-full">
-                    <h2 className="font-medium text-base-content opacity-60">
+                    <h2 className="font-medium text-base-content opacity-60 hover:opacity-80 transition-opacity duration-200">
                       {article.title}
                     </h2>
                     <p className="text-base-content opacity-50 text-xs">

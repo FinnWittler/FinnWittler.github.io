@@ -173,7 +173,7 @@ export const skeleton = ({
   shape?: string;
   className?: string | null;
 }): React.JSX.Element => {
-  const classNames = ['bg-base-300', 'animate-pulse', shape];
+  const classNames = ['bg-base-300', 'animate-pulse', 'shimmer', shape];
   if (className) {
     classNames.push(className);
   }
