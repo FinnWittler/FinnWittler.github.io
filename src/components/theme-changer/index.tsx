@@ -40,7 +40,7 @@ const ThemeChanger = ({
   };
 
   return (
-    <div className="card overflow-visible shadow-lg card-sm bg-base-100 fade-in-up">
+    <div className="card overflow-visible shadow-lg card-sm bg-base-100 fade-in-up z-50">
       <div className="flex-row items-center space-x-4 flex pl-6 pr-2 py-4">
         <div className="flex-1">
           <h5 className="card-title">
@@ -79,7 +79,7 @@ const ThemeChanger = ({
               </div>
               <div
                 tabIndex={0}
-                className="mt-16 overflow-y-auto shadow-2xl top-px dropdown-content max-h-96 min-w-max rounded-lg bg-base-200 text-base-content z-10 fade-in-down"
+                className="mt-16 overflow-y-auto shadow-2xl top-px dropdown-content max-h-96 min-w-max rounded-lg bg-base-200 text-base-content z-50 fade-in-down"
               >
                 <ul className="p-4 menu menu-sm">
                   {[
