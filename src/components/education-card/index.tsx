@@ -13,7 +13,7 @@ const ListItem = ({
   institution?: React.ReactNode;
   index?: number;
 }) => (
-  <li className={`mb-5 ml-4 fade-in-up stagger-${Math.min(index + 1, 5)}`}>
+  <li className={`mb-5 pl-4 fade-in-up stagger-${Math.min(index + 1, 5)}`}>
     <div
       className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5 hover:bg-primary transition-colors duration-300"
       style={{ left: '-4.5px' }}

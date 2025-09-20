@@ -125,6 +125,7 @@ export const getSanitizedConfig = (
           config?.themeConfig?.respectPrefersColorScheme || false,
         displayAvatarRing: config?.themeConfig?.displayAvatarRing ?? true,
         themes: config?.themeConfig?.themes || DEFAULT_THEMES,
+        randomizeThemeOnLoad: config?.themeConfig?.randomizeThemeOnLoad || false,
       },
       footer: config?.footer,
       enablePWA: config?.enablePWA ?? true,
@@ -137,6 +138,11 @@ export const getSanitizedConfig = (
 export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
   if (themeConfig.disableSwitch) {
     return themeConfig.defaultTheme;
+  }
+
+  // Check if random theme selection is enabled
+  if (themeConfig.randomizeThemeOnLoad) {
+    return getRandomTheme(themeConfig.themes);
   }
 
   if (
@@ -158,6 +164,11 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
   }
 
   return themeConfig.defaultTheme;
+};
+
+export const getRandomTheme = (themes: string[]): string => {
+  const randomIndex = Math.floor(Math.random() * themes.length);
+  return themes[randomIndex];
 };
 
 export const skeleton = ({

@@ -309,6 +309,11 @@ interface ThemeConfig {
    * Available themes
    */
   themes?: Array<string>;
+
+  /**
+   * Randomize theme selection on each page load
+   */
+  randomizeThemeOnLoad?: boolean;
 }
 
 interface Config {

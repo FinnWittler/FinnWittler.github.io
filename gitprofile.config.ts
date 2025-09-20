@@ -23,27 +23,23 @@ const CONFIG = {
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
     },
     external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Capstone Project',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Integrated system for managing project information for real estate properties, streamlining data organization and retrieval.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
         },
         {
-          title: 'Project Name',
+          title: 'Digital Nudging Website',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'A website with different landing pages to demonstrate the concept of digital nudging.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
@@ -51,28 +47,14 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Finn Wittler', description: '', imageURL: '' },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'Finn Wittler',
+    researchGate: 'Finn Wittler',
+    facebook: 'Finn Wittler',
+    website: 'https://finnwittler.github.io/',
+    phone: '123-456-7890',
+    email: 'finn.wittler@gmail.com',
   },
   resume: {
     fileUrl:
@@ -96,60 +78,76 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'University of Cologne',
+      position: 'Student Research Assistant',
+      from: 'April 2024',
+      to: 'August 2025',
+      companyLink: 'https://ciis.uni-koeln.de/en/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Lernigo',
+      position: 'Tutor',
+      from: 'November 2023',
+      to: 'Oktober 2024',
+      companyLink: 'https://lernigo.de/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
+      name: 'Excel',
       body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
+      year: '2024',
+      link: 'https://example.com',
+    },
+        {
+      name: 'Python',
+      body: 'Lorem ipsum dolor sit amet',
+      year: '2024',
+      link: 'https://example.com',
+    },
+        {
+      name: 'R',
+      body: 'Lorem ipsum dolor sit amet',
+      year: '2024',
       link: 'https://example.com',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Sungkyunkwan University',
+      degree: 'Data Science',
+      from: '2025',
+      to: '2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'University of Cologne',
+      degree: 'Information Systems Management',
+      from: '2023',
+      to: '2026',
+    },
+        {
+      institution: 'Evangelisches Gymnasium Werther',
+      degree: 'Highschool',
+      from: '2015',
+      to: '2023',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Bachelor Seminar thesis',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
+      authors: 'Finn Wittler',
       link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Zero Trust in hybrid cloud environments: challenges, best practices in the migration process and design of a zero trust architecture',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title: 'Bachelor thesis',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
+      authors: 'Finn Wittler',
       link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'The Impact of Information Security Culture on Cybersecurity Behaviour: Designing an Iterative Culture-Sensitive Framework for Effective SETA Programs',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
@@ -176,6 +174,9 @@ const CONFIG = {
 
     // Display the ring in Profile picture
     displayAvatarRing: true,
+
+    // Randomize theme on each page load
+    randomizeThemeOnLoad: true,
 
     // Available themes. To remove any theme, exclude from here.
     themes: [
