@@ -51,6 +51,55 @@
   --noise: 0;
 }
 
+/* Global rounded corners for all cards and tiles */
+.card {
+  border-radius: 1rem !important;
+}
+
+.card-body {
+  border-radius: 1rem !important;
+}
+
+/* Dropdown and modal elements */
+.dropdown-content {
+  border-radius: 1rem !important;
+}
+
+.modal-box {
+  border-radius: 1rem !important;
+}
+
+/* Badge and button elements */
+.badge {
+  border-radius: 0.75rem !important;
+}
+
+.btn {
+  border-radius: 0.75rem !important;
+}
+
+/* Avatar and image containers */
+.avatar .rounded-full {
+  border-radius: 50% !important;
+}
+
+.mask.mask-squircle {
+  border-radius: 1rem !important;
+}
+
+/* Custom rounded elements */
+.rounded-box {
+  border-radius: 1rem !important;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem !important;
+}
+
+.rounded-xl {
+  border-radius: 1rem !important;
+}
+
 * {
   scrollbar-width: thin;
 }
@@ -232,4 +281,5 @@ svg {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
+  border-radius: 0.5rem;
 }

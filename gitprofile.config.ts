@@ -188,7 +188,6 @@ const CONFIG = {
       'corporate',
       'synthwave',
       'retro',
-      'cyberpunk',
       'valentine',
       'halloween',
       'garden',
