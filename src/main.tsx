@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import GitProfile from './components/gitprofile.tsx';
 import LoadingScreen from './components/loading-screen/index.tsx';
-import CONFIG from '../gitprofile.config.ts';
+import CONFIG from '../gitprofile.config.js';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

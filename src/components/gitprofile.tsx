@@ -25,7 +25,6 @@ import CertificationCard from './certification-card';
 import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
-import BlogCard from './blog-card';
 import MemoryGame from './memory-game';
 import Footer from './footer';
 import PublicationCard from './publication-card';
