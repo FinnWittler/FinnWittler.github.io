@@ -109,6 +109,10 @@ export interface SanitizedHotjar {
   snippetVersion: number;
 }
 
+export interface SanitizedGame {
+  display: boolean;
+}
+
 export interface SanitizedBlog {
   display: boolean;
   source: string;
@@ -138,7 +142,7 @@ export interface SanitizedConfig {
   publications: Array<SanitizedPublication>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;
-  blog: SanitizedBlog;
+  game: SanitizedGame;
   themeConfig: SanitizedThemeConfig;
   footer?: string;
   enablePWA: boolean;

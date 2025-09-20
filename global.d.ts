@@ -265,23 +265,11 @@ interface Hotjar {
   snippetVersion?: number;
 }
 
-interface Blog {
+interface Game {
   /**
-   * medium | dev
+   * Display the memory game?
    */
-  source?: string;
-
-  /**
-   * Username
-   */
-  username?: string;
-
-  /**
-   * How many articles to display
-   *
-   * Max is 10
-   */
-  limit?: number;
+  display?: boolean;
 }
 
 interface ThemeConfig {
@@ -383,9 +371,9 @@ interface Config {
   hotjar?: Hotjar;
 
   /**
-   * Blog config
+   * Game config
    */
-  blog?: Blog;
+  game?: Game;
 
   /**
    * Theme config

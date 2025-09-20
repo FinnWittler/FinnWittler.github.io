@@ -26,6 +26,7 @@ import { GithubProject } from '../interfaces/github-project';
 import GithubProjectCard from './github-project-card';
 import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
+import MemoryGame from './memory-game';
 import Footer from './footer';
 import PublicationCard from './publication-card';
 
@@ -264,12 +265,8 @@ const GitProfile = ({ config }: { config: Config }) => {
                       googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                     />
                   )}
-                  {sanitizedConfig.blog.display && (
-                    <BlogCard
-                      loading={loading}
-                      googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                      blog={sanitizedConfig.blog}
-                    />
+                  {sanitizedConfig.game.display && (
+                    <MemoryGame loading={loading} />
                   )}
                 </div>
               </div>

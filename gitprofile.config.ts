@@ -150,11 +150,9 @@ const CONFIG = {
         'The Impact of Information Security Culture on Cybersecurity Behaviour: Designing an Iterative Culture-Sensitive Framework for Effective SETA Programs',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+  // Display a memory game instead of blog articles
+  game: {
+    display: true, // Set to false to hide the game section
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
