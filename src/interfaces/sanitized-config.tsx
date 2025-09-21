@@ -129,6 +129,11 @@ export interface SanitizedThemeConfig {
   randomizeThemeOnLoad: boolean;
 }
 
+export interface SanitizedCookies {
+  enabled: boolean;
+  policyUrl?: string;
+}
+
 export interface SanitizedConfig {
   github: SanitizedGithub;
   projects: SanitizedProjects;
@@ -144,6 +149,7 @@ export interface SanitizedConfig {
   hotjar: SanitizedHotjar;
   game: SanitizedGame;
   themeConfig: SanitizedThemeConfig;
+  cookies: SanitizedCookies;
   footer?: string;
   enablePWA: boolean;
 }

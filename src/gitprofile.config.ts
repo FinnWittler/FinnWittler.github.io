@@ -213,6 +213,12 @@ const CONFIG = {
     ],
   },
 
+  // Cookie consent configuration
+  cookies: {
+    enabled: true, // Set to false to disable cookie banner
+    policyUrl: '', // Optional: Link to your privacy policy
+  },
+
   // Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"

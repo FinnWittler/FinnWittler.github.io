@@ -304,6 +304,18 @@ interface ThemeConfig {
   randomizeThemeOnLoad?: boolean;
 }
 
+interface Cookies {
+  /**
+   * Enable cookie consent banner
+   */
+  enabled?: boolean;
+
+  /**
+   * Privacy policy URL
+   */
+  policyUrl?: string;
+}
+
 interface Config {
   /**
    * GitHub config
@@ -379,6 +391,11 @@ interface Config {
    * Theme config
    */
   themeConfig?: ThemeConfig;
+
+  /**
+   * Cookie consent config
+   */
+  cookies?: Cookies;
 
   /**
    * Custom footer
