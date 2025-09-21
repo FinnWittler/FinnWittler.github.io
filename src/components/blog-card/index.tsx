@@ -42,7 +42,7 @@ const BlogCard = ({
           <div className="p-8 h-full w-full">
             <div className="flex items-center flex-col md:flex-row">
               <div className="avatar mb-5 md:mb-0">
-                <div className="w-24 h-24 mask mask-squircle">
+                <div className="w-32 h-32 mask mask-squircle">
                   {skeleton({
                     widthCls: 'w-full',
                     heightCls: 'h-full',
@@ -118,7 +118,7 @@ const BlogCard = ({
           <div className="p-8 h-full w-full">
             <div className="flex items-center flex-col md:flex-row">
               <div className="avatar mb-5 md:mb-0 opacity-90 hover:opacity-100 transition-opacity duration-300">
-                <div className="w-24 h-24 mask mask-squircle hover:scale-105 transition-transform duration-300">
+                <div className="w-32 h-32 mask mask-squircle hover:scale-105 transition-transform duration-300">
                   <LazyImage
                     src={article.thumbnail}
                     alt={'thumbnail'}

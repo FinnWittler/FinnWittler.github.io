@@ -33,16 +33,16 @@ const CONFIG = {
           description:
             'Integrated system for managing project information for real estate properties, streamlining data organization and retrieval.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://www.investopedia.com/thmb/OMBuas1k4GFZeHU76Ysw6trAxFc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/realestate.asp-final-5a41bc7692924def8ef81fbf4b6b409a.jpg',
+          link: 'https://cube-real.estate/en/home-page/',
         },
         {
           title: 'Digital Nudging Website',
           description:
             'A website with different landing pages to demonstrate the concept of digital nudging.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://capturly.com/blog/wp-content/uploads/2024/03/Definition-of-digital-nudges-1024x512.png',
+          link: '',
         },
       ],
     },
@@ -94,22 +94,19 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Excel',
-      body: 'Lorem ipsum dolor sit amet',
-      year: '2024',
-      link: 'https://example.com',
+      name: 'R',
+      body: '',
+      year: '2025',
     },
         {
       name: 'Python',
-      body: 'Lorem ipsum dolor sit amet',
+      body: '',
       year: '2024',
-      link: 'https://example.com',
     },
         {
-      name: 'R',
-      body: 'Lorem ipsum dolor sit amet',
-      year: '2024',
-      link: 'https://example.com',
+      name: 'Excel',
+      body: '',
+      year: '2023',
     },
   ],
   educations: [
