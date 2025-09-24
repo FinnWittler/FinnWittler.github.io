@@ -157,7 +157,7 @@ const ExternalProjectCard = ({
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 card-container">
               {loading ? renderSkeleton() : renderExternalProjects()}
             </div>
           </div>

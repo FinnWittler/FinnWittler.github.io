@@ -143,16 +143,18 @@ svg {
 }
 
 .z-hover {
-  transition: all ease-in-out 0.3s !important;
+  transition: all 0.2s ease-out !important;
+  transform-style: preserve-3d;
 }
 
 .z-hover:hover,
 .z-hover:focus,
 .z-hover:active {
-  transition: transform 0.3s !important;
-  -ms-transform: scale(1.01) !important;
-  -webkit-transform: scale(1.01) !important;
-  transform: scale(1.01) !important;
+  transform: scale(1.05) rotateX(10deg) rotateY(-5deg) !important;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-out !important;
 }
 
 .pb-0-important {
@@ -259,6 +261,10 @@ svg {
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
+
+.card-container {
+  perspective: 1000px;
+}
 
 .pulse-slow {
   animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;

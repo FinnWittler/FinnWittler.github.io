@@ -202,7 +202,7 @@ const BlogCard = ({
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6 card-container">
             {loading || !articles ? renderSkeleton() : renderArticles()}
           </div>
         </div>

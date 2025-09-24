@@ -126,7 +126,7 @@ const PublicationCard = ({
       <div className="col-span-1 lg:col-span-2 fade-in-up">
         <div className="card bg-base-200 shadow-xl border border-base-300 hover:shadow-2xl transition-shadow duration-300">
           <div className="card-body p-8">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <div className="flex items-center justify gap-4 mb-8">
               <div className="flex items-center space-x-3">
                 {loading ? (
                   skeleton({
@@ -139,7 +139,7 @@ const PublicationCard = ({
                     <AiOutlineBook className="text-2xl" />
                   </div>
                 )}
-                <div className="min-w-0 flex-1">
+                <div className="min-w-0 flex-1 text-center">
                   <h3 className="text-base sm:text-lg font-bold text-base-content truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-40', heightCls: 'h-8' })
@@ -153,7 +153,7 @@ const PublicationCard = ({
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 card-container">
               {loading ? renderSkeleton() : renderPublications()}
             </div>
           </div>
