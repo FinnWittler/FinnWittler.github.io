@@ -134,7 +134,6 @@ const CONFIG = {
       title: 'Bachelor Seminar thesis',
       conferenceName: '',
       authors: 'Finn Wittler',
-      link: 'https://example.com',
       description:
         'Zero Trust in hybrid cloud environments: challenges, best practices in the migration process and design of a zero trust architecture',
     },
@@ -142,7 +141,6 @@ const CONFIG = {
       title: 'Bachelor thesis',
       journalName: '',
       authors: 'Finn Wittler',
-      link: 'https://example.com',
       description:
         'The Impact of Information Security Culture on Cybersecurity Behaviour: Designing an Iterative Culture-Sensitive Framework for Effective SETA Programs',
     },
